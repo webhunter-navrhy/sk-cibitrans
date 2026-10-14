@@ -9,16 +9,16 @@ h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
 p { margin: 0; text-wrap: pretty; }
 ul[role="list"], ol[role="list"] { list-style: none; margin: 0; padding: 0; }
 
-@font-face { font-family: "Archivo"; font-weight: 400; font-display: swap; src: url(../fonts/archivo-400-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Archivo"; font-weight: 400; font-display: swap; src: url(../fonts/archivo-400-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: "Archivo"; font-weight: 600; font-display: swap; src: url(../fonts/archivo-600-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Archivo"; font-weight: 600; font-display: swap; src: url(../fonts/archivo-600-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Figtree"; font-weight: 400; font-display: swap; src: url(../fonts/figtree-400-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Figtree"; font-weight: 400; font-display: swap; src: url(../fonts/figtree-400-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Figtree"; font-weight: 600; font-display: swap; src: url(../fonts/figtree-600-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Figtree"; font-weight: 600; font-display: swap; src: url(../fonts/figtree-600-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 :root {
   --bg: #ffffff; --text: #14213d; --muted: #4f5b73; --accent: #f26b13; --accent-text: #fff; --line: #d6deeb;
   --navy: #1b2f86; --sky: #3fa4e8; --paper: #eef3fa;
-  --font-body: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-head: "Archivo", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-head: "Figtree", system-ui, sans-serif;
   --step--1: clamp(0.83rem, 0.80rem + 0.14vw, 0.92rem);
   --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
   --step-1: clamp(1.2rem, 1.12rem + 0.4vw, 1.45rem);
@@ -72,7 +72,7 @@ h1 { font-weight: 600; max-width: 14ch; }
 .stitek { font-size: var(--step--1); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--sky); margin-bottom: var(--space-2); }
 .lead { font-size: var(--step-1); color: var(--muted); margin-top: var(--space-3); max-width: 38rem; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; margin-top: var(--space-4); }
-.tel { font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 2px solid var(--sky); }
+.tel { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 2px solid var(--sky); }
 .hero-foto img { width: 100%; border-radius: 6px; box-shadow: 0 24px 60px -24px rgba(27,47,134,.5); }
 .pruhy { position: absolute; left: 0; right: 0; bottom: 1.4rem; display: grid; gap: 6px; opacity: .9; }
 .pruhy span { height: 4px; background: linear-gradient(90deg, transparent, var(--sky) 30%, var(--accent)); transform-origin: left; animation: jed 1.2s cubic-bezier(.2,.7,.2,1) both; }
