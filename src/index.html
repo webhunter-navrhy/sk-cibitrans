@@ -1,0 +1,89 @@
+{% extends "_base.html" %}
+{% set titulek = 'CibiTrans – express transport, freight forwarding and removals from Nové Zámky' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="stitek">Time critical solutions · 24/7</p>
+      <h1>When it has to be there on time.</h1>
+      <p class="lead">Express delivery, freight forwarding, removals and on-board couriers from the heart of Europe. One point of contact, from pick-up to the moment it is delivered.</p>
+      <div class="hero-cta">
+        <a class="tlacitko" href="#contact">Send your request</a>
+        <a class="tel" href="tel:+421917287646">Hot line +421 917 287 646</a>
+      </div>
+    </div>
+    <div class="hero-foto">
+      {{ img('vozidlo.png', 'CibiTrans express vehicle', sizes='(min-width: 60rem) 36rem, 100vw') }}
+    </div>
+  </div>
+  <div class="pruhy" aria-hidden="true"><span></span><span></span><span></span></div>
+</section>
+
+<section class="sekce tmava" id="services">
+  <div class="wrap">
+    <h2>Four ways to move what cannot wait</h2>
+    <ol class="drahy" role="list">
+      {% for s in data.sluzby %}
+      <li class="draha" id="{{ s.id }}">
+        <span class="cislo">0{{ loop.index }}</span>
+        <div class="draha-text">
+          <h3>{{ s.nazev }}</h3>
+          <p class="kratce">{{ s.kratce }}</p>
+          <p>{{ s.popis }}</p>
+        </div>
+        <a class="draha-btn" href="#contact" data-sluzba="{{ s.id }}">Request this <span aria-hidden="true">→</span></a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="sekce" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <h2>Located in the heart of Europe</h2>
+      <p>From Slovakia we reach many strategic countries for automotive, medical, machinery and technology industries. Whether by road or by air, we find the way to deliver on time.</p>
+      <p>CibiTrans provides complete delivery solutions around the clock: freight, part loads, full loads and express deliveries locally, regionally, nationally, throughout Europe and to any destination worldwide. As your consignment starts its journey we keep you updated by e-mail, telephone or text, whichever you prefer.</p>
+    </div>
+    <ul class="sily" role="list">
+      <li>Professional approach</li>
+      <li>Multilingual communication: English, Slovak, Hungarian, Czech, Polish</li>
+      <li>Quality and reliability</li>
+      <li>Flexibility</li>
+      <li>Speed and accuracy of our services</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce svetla" id="documents">
+  <div class="wrap">
+    <h2>Documents</h2>
+    <div class="dokumenty">
+      <a class="dok" href="{{ base }}docs/CMR-Insurance.pdf"><strong>CMR insurance</strong><span>PDF</span></a>
+      <a class="dok" href="{{ base }}docs/Prepravny-poriadok.pdf"><strong>Transport order (Prepravný poriadok)</strong><span>PDF</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="contact">
+  <div class="wrap kontakt-grid">
+    <div>
+      <h2>Send your request</h2>
+      <p>Tell us the route, the cargo and when it has to arrive. Choose a service, or leave it open and we will find the fastest solution.</p>
+      {% include "_formular.html" %}
+    </div>
+    <div class="adresa">
+      <h3>CibiTrans s.r.o.</h3>
+      <p>Dvorská cesta 8<br>940 01 Nové Zámky<br>Slovakia</p>
+      <p class="drobne">Company reg. 46511148<br>VAT ID SK2023419310</p>
+      <ul class="lide" role="list">
+        <li><strong>Štefan Czibulka</strong><span>Managing Director</span><a href="tel:+421917287646">+421 917 287 646</a><a href="mailto:czibulka@cibitrans.eu">czibulka@cibitrans.eu</a></li>
+        <li><strong>Gabriel Sulci</strong><span>Transport Manager</span><a href="tel:+421907929124">+421 907 929 124</a><a href="mailto:sulci@cibitrans.eu">sulci@cibitrans.eu</a></li>
+        <li><strong>Dajana Lantošová</strong><span>Invoices, account</span><a href="tel:+421917145524">+421 917 145 524</a><a href="mailto:lantosova@cibitrans.eu">lantosova@cibitrans.eu</a></li>
+        <li><strong>Vivien Czibulka</strong><span>Invoices, account</span><a href="tel:+421918288821">+421 918 288 821</a><a href="mailto:vczibulka@cibitrans.eu">vczibulka@cibitrans.eu</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

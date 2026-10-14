@@ -1,0 +1,26 @@
+[
+ {
+  "id": "express",
+  "nazev": "Express transport",
+  "kratce": "Door-to-door, next day, across Europe",
+  "popis": "Time-sensitive EU express delivery for a small parcel, a part or full pallet, or high-value goods. For most shipments next-day delivery, and short-notice collections from anywhere in the UK or Europe by the quickest means possible. Delivery confirmed by text message."
+ },
+ {
+  "id": "removals",
+  "nazev": "Removal services",
+  "kratce": "International moves, start to finish",
+  "popis": "International removals with packing materials and methods developed for safe transport, and trained teams who look after your belongings from start to finish."
+ },
+ {
+  "id": "freight",
+  "nazev": "Freight forwarding",
+  "kratce": "Air, rail and road, one pallet or a full load",
+  "popis": "Air freight, road transport and rail through a network of experienced couriers, with constant communication throughout the whole shipping process."
+ },
+ {
+  "id": "obc",
+  "nazev": "On-board courier (OBC)",
+  "kratce": "A personal escort for critical cargo",
+  "popis": "A dedicated courier travels with your consignment from pick-up to final delivery: door-to-door, door-to-airport, airport-to-door or airport-to-airport, with step-by-step updates."
+ }
+]

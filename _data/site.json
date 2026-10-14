@@ -1,0 +1,51 @@
+{
+  "slug": "sk-cibitrans",
+  "nazev": "CibiTrans s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-cibitrans/",
+  "base": "/sk-cibitrans/",
+  "lang": "en",
+  "popis": "CibiTrans, Nové Zámky: express and time-critical transport, freight forwarding, international removals and on-board courier across Europe, 24/7.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "vozidlo.png",
+  "logo": "logo.png",
+  "theme_color": "#ffffff",
+  "typ": "LocalBusiness",
+  "ico": "46511148",
+  "kontakt": {
+    "email": "order@cibitrans.eu",
+    "telefon": "+421 917 287 646",
+    "adresa": {
+      "ulice": "Dvorská cesta 8",
+      "psc": "940 01",
+      "mesto": "Nové Zámky",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Request from the website"
+  },
+  "nav": [
+    {
+      "text": "Services",
+      "href": "#services"
+    },
+    {
+      "text": "About us",
+      "href": "#about"
+    },
+    {
+      "text": "Documents",
+      "href": "#documents"
+    },
+    {
+      "text": "Contact",
+      "href": "#contact"
+    }
+  ]
+}
